@@ -1,0 +1,34 @@
+{
+  "id": "kim-stolarsky-eventual-three-prefix-conjecture",
+  "revision": 2,
+  "problem_ids": ["kim-stolarsky-eventual-three-prefix-conjecture"],
+  "topic": "Continued-fraction prefixes of the three odd Nicomachean root branches",
+  "title": "Correction of Kim–Stolarsky's eventual three-prefix conjecture",
+  "creators": [
+    {"name": "Ma, Haobo", "affiliation": "ChronoAI Pte Ltd, Singapore"},
+    {"name": "Zhang, Wenlin", "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore"}
+  ],
+  "abstract": "Kim and Stolarsky's eventual three-prefix conjecture in Integers 26 (2026), A98, Remark 3, p. 6, fails in both its squared and third terms whenever n is congruent to 2 modulo 3, by exact continued-fraction divisions and polynomial sign bounds. We give corrected prefixes for all three root branches, prove the proposed ordering and all three limiting digit ratios, and determine the full rational expansions for the squared odd and even terms. A specialization of the authors' own identity also answers their question about the separation of double zeros: there is no finite bound, even for integer-coefficient factors.",
+  "summary": "For m=10^(4n+2), n>=1, the L prefix is correct. The corrected R third digit is floor((m-3)/7), and the corrected Q fourth digit is floor((6m+128)/35); both printed prefixes fail exactly for n=2 modulo 3. The proposed ordering and all three digit-ratio limits hold. The note includes full squared even-root expansions and a double-zero family obtained from the posing authors' identity.",
+  "license": "cc-by-4.0",
+  "evidence_url": "https://github.com/the-omega-institute/trureturing/blob/53c631a19a8292b44b6ed47b8cb236f00c7f5ed8/D5/S1/Depth/ContinuedFractions/KimStolarskyEventualPrefixRefutation.lean",
+  "posing_source": {
+    "url": "https://math.colgate.edu/~integers/aa98/aa98.pdf",
+    "doi": "10.5281/zenodo.21678529",
+    "locator": "Theorem 1, p. 5; Remark 3, p. 6; double-zero question and identity, p. 4",
+    "preprint": "https://arxiv.org/abs/2511.15133v1",
+    "preprint_locator": "Theorem 1, p. 5; Remark 4, p. 6"
+  },
+  "coverage": {
+    "simultaneous_eventual_assertion": "Refuted and corrected for every source index n>=1. The pinned Lean declaration result negates the original simultaneous eventual assertion.",
+    "L_prefix": "Proved in the written argument by exact rational root brackets for every source index n>=1.",
+    "R_prefix": "Refuted and corrected; written proof for every even m>=12, with full expansions for m=10^(4n+2), n>=0.",
+    "Q_prefix": "Refuted and corrected; written proof gives fourth digit floor((6m+128)/35) for every source index n>=1.",
+    "ordering": "Written proof of y_R>y_L>y_Q>4 for every integer m>=12.",
+    "ratio_limits": "Written proofs of 101/3, 7/2 and 35/8 for L, R and Q, respectively.",
+    "squared_even_term": "Not posed as a specific prefix; full expansions proved for every decimal source parameter, and a six-digit prefix for every even m>=40.",
+    "double_zero_separation_question": "Answered: no finite bound, from the posing authors' displayed identity; integer-coefficient factors give double zeros 0 and k for every integer k>=1.",
+    "finite_checks": "Exact coefficient identities, sign-bound certificates, squared-root full expansions at n=0..60, cubic prefix brackets at n=1..60, general even-parameter ranges, and source-sum controls; see checker-output.json.",
+    "not_covered": "Even cubic branches, a full classification of the discriminant-zero locus, and separate q-identity, square-root-of-11 and four-term constructions."
+  }
+}

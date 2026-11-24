@@ -1,9 +1,28 @@
-# Mathesis paper template
+# Correction of Kim–Stolarsky's eventual three-prefix conjecture
 
-One repository for one exact Mathesis paper version. This template has no selected paper and no example books.
+**Authors:** Haobo Ma, Wenlin Zhang
 
-Authors can start from the [Mathesis LaTeX manuscript template](docs/layer-mathesis/MANUSCRIPT.md) for papers and short notes. Our own short notes use it as their default reference; sections and length follow the mathematical argument.
+Kim and Stolarsky's eventual three-prefix conjecture in Integers 26 (2026), A98, Remark 3, p. 6, fails in both its squared and third terms whenever n is congruent to 2 modulo 3, by exact continued-fraction divisions and polynomial sign bounds. We give corrected prefixes for all three root branches, prove the proposed ordering and all three limiting digit ratios, and determine the full rational expansions for the squared odd and even terms. A specialization of the authors' own identity also answers their question about the separation of double zeros: there is no finite bound, even for integer-coefficient factors.
 
-The upstream books template supplies the machinery; the Mathesis layer supplies the publisher adapter and the [enforced four-zone layout](docs/layer-mathesis/LAYOUT.md).
+- PDF: [frozen public file](paper.pdf)
+- License: CC-BY-4.0
+- Version: 2
+- Mathesis record: [kim-stolarsky-eventual-three-prefix-conjecture](https://mathesis-omega-research.apps.chrono-ai.fun/papers/kim-stolarsky-eventual-three-prefix-conjecture?version=2)
 
-Use [the publisher pipeline](docs/layer-mathesis/PIPELINE.md) to import a public projection with `paper.py fill`. It creates the paper record, one bilingual content skeleton and a generated paper README. Upgrade with `tbook template update`; keep preparation run records outside the repository.
+## How to cite
+
+Haobo Ma, Wenlin Zhang (2026). Correction of Kim–Stolarsky's eventual three-prefix conjecture. Mathesis, version 2. https://mathesis-omega-research.apps.chrono-ai.fun/papers/kim-stolarsky-eventual-three-prefix-conjecture?version=2
+
+## Statement progress
+
+| Statement | Formalization status | Source | Verification basis |
+|---|---|---|---|
+| Theorem (s1) | preparing | [Lean source](https://github.com/the-omega-institute/trureturing/blob/53c631a19a8292b44b6ed47b8cb236f00c7f5ed8/D5/S1/Depth/ContinuedFractions/KimStolarskyEventualPrefixRefutation.lean) | No public receipt |
+| Theorem (s2) | preparing | [Lean source](https://github.com/the-omega-institute/trureturing/blob/53c631a19a8292b44b6ed47b8cb236f00c7f5ed8/D5/S1/Depth/ContinuedFractions/KimStolarskyEventualPrefixRefutation.lean) | No public receipt |
+| Corollary (s3) | preparing | [Lean source](https://github.com/the-omega-institute/trureturing/blob/53c631a19a8292b44b6ed47b8cb236f00c7f5ed8/D5/S1/Depth/ContinuedFractions/KimStolarskyEventualPrefixRefutation.lean) | No public receipt |
+| Corollary (s4) | preparing | [Lean source](https://github.com/the-omega-institute/trureturing/blob/53c631a19a8292b44b6ed47b8cb236f00c7f5ed8/D5/S1/Depth/ContinuedFractions/KimStolarskyEventualPrefixRefutation.lean) | No public receipt |
+| Corollary (s5) | preparing | [Lean source](https://github.com/the-omega-institute/trureturing/blob/53c631a19a8292b44b6ed47b8cb236f00c7f5ed8/D5/S1/Depth/ContinuedFractions/KimStolarskyEventualPrefixRefutation.lean) | No public receipt |
+
+## Contributions
+
+Original authors are listed above. Formalization contributors and attribution are retained in `formalization/nodes.json`; repository pull requests do not confer verification or credit. Submit formalization attempts through the Mathesis attempt path described in [CONTRIBUTING.md](CONTRIBUTING.md).

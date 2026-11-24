@@ -1,0 +1,66 @@
+{
+  "files": {
+    "pdf": {
+      "bytes": 75045,
+      "matches_public": true,
+      "path": "paper.pdf",
+      "public_sha256": "2d75a75cfe93e4e8f1cd7a14a8ae513d298e8f550c7f822ea78beabbea9a626d",
+      "sha256": "2d75a75cfe93e4e8f1cd7a14a8ae513d298e8f550c7f822ea78beabbea9a626d"
+    },
+    "source": {
+      "bytes": 13968,
+      "matches_public": true,
+      "path": "source.archive",
+      "public_sha256": "6a4e5499fb309d7dc0c506b6bc994e20e926558a7499a2f35eef70e64023b11b",
+      "sha256": "6a4e5499fb309d7dc0c506b6bc994e20e926558a7499a2f35eef70e64023b11b"
+    }
+  },
+  "source_identity": "Mathesis public projection",
+  "work": {
+    "abstract_text": "Kim and Stolarsky's eventual three-prefix conjecture in Integers 26 (2026), A98, Remark 3, p. 6, fails in both its squared and third terms whenever n is congruent to 2 modulo 3, by exact continued-fraction divisions and polynomial sign bounds. We give corrected prefixes for all three root branches, prove the proposed ordering and all three limiting digit ratios, and determine the full rational expansions for the squared odd and even terms. A specialization of the authors' own identity also answers their question about the separation of double zeros: there is no finite bound, even for integer-coefficient factors.",
+    "authors": [
+      {
+        "affiliation": "ChronoAI Pte Ltd, Singapore",
+        "name": "Haobo Ma"
+      },
+      {
+        "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+        "name": "Wenlin Zhang"
+      }
+    ],
+    "concept_doi": null,
+    "current_version": 2,
+    "doi": null,
+    "lean_source": {
+      "revision": "53c631a19a8292b44b6ed47b8cb236f00c7f5ed8",
+      "url": "https://github.com/the-omega-institute/trureturing/blob/53c631a19a8292b44b6ed47b8cb236f00c7f5ed8/D5/S1/Depth/ContinuedFractions/KimStolarskyEventualPrefixRefutation.lean"
+    },
+    "license": "CC-BY-4.0",
+    "msc": [],
+    "pdf": {
+      "bytes": 75045,
+      "sha256": "2d75a75cfe93e4e8f1cd7a14a8ae513d298e8f550c7f822ea78beabbea9a626d",
+      "url": "/api/v1/collected-papers/kim-stolarsky-eventual-three-prefix-conjecture/files/pdf?version=2"
+    },
+    "previous_version": null,
+    "publication": "public",
+    "published_on": "2026-11-23T23:45:02.666106756Z",
+    "record": "kim-stolarsky-eventual-three-prefix-conjecture",
+    "repository_name": "kim-stolarsky-eventual-three-prefix-conjecture",
+    "source": {
+      "bytes": 13968,
+      "sha256": "6a4e5499fb309d7dc0c506b6bc994e20e926558a7499a2f35eef70e64023b11b",
+      "url": "/api/v1/collected-papers/kim-stolarsky-eventual-three-prefix-conjecture/files/source?version=2"
+    },
+    "title": "Correction of Kim–Stolarsky's eventual three-prefix conjecture",
+    "versions": [
+      {
+        "previous_version": null,
+        "published_on": "2026-11-23T23:45:02.666106756Z",
+        "revision": "2",
+        "version": 2
+      }
+    ],
+    "work": "kim-stolarsky-eventual-three-prefix-conjecture"
+  }
+}

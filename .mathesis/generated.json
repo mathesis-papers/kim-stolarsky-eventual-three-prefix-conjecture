@@ -1,0 +1,36 @@
+{
+  "generated_paths": [
+    "CHANGELOG.md",
+    "CITATION.cff",
+    "CONTRIBUTING.md",
+    "LICENSES/CC-BY-4.0.txt",
+    "README.md",
+    "formalization/nodes.json",
+    "manuscript/kim-stolarsky-note/README.md",
+    "manuscript/kim-stolarsky-note/checker-output.json",
+    "manuscript/kim-stolarsky-note/metadata.json",
+    "manuscript/kim-stolarsky-note/note.tex",
+    "manuscript/kim-stolarsky-note/verify.py",
+    "paper.json",
+    "paper.pdf",
+    "source.archive"
+  ],
+  "generator_version": "0.1.0",
+  "sha256": {
+    "CHANGELOG.md": "4cb9bfcedba0f98525e364769384906e484b8b698764b7298761345e080e84d5",
+    "CITATION.cff": "9244d2e69f37823cd658ca71a8e2a1ee0d758b18e4c2bd8f088397fb8d4ac2c9",
+    "CONTRIBUTING.md": "fafd66e63160b2a88f433af56d2af2b0f7bf6ed2fd417d46b54446ce07c627ff",
+    "LICENSES/CC-BY-4.0.txt": "58230517b7895aa219ff46a6ed63e67057a1582fb9ea054b16728a8c13525650",
+    "README.md": "5c987ef8af69f754ad4b08fe0c46d2efcb23e9cff01b1612a878d5ab719a8aa2",
+    "formalization/nodes.json": "60901820bcc123f9d1eec74d6b25deb861c9e7b90b240229d41489125ff2c87e",
+    "manuscript/kim-stolarsky-note/README.md": "cb4ed297b63c8107a627191344dda515ac84bfe5678cdd8c03f54f6bd525bdd1",
+    "manuscript/kim-stolarsky-note/checker-output.json": "1ac4757fa63a95acb098cf0a7d1658b8e5702db6a7fa150052737f27b3a7cd48",
+    "manuscript/kim-stolarsky-note/metadata.json": "f8bbf5a4f3cc466831b6ab49114df775ee941f8000a5df640676ed78ca3b2e1e",
+    "manuscript/kim-stolarsky-note/note.tex": "ab2c33abd449ca48c92f02a38472daff78c5402dc9fae16b2328b13f5998552e",
+    "manuscript/kim-stolarsky-note/verify.py": "3eccb25d6b0858f589bf106052c323180374e21cef3d41e04a44376c8d39f3cd",
+    "paper.json": "b99f9a559d66ccb662f6a3dfda264fc6c13d43b4b9f47369497ac2bbfd1c0891",
+    "paper.pdf": "2d75a75cfe93e4e8f1cd7a14a8ae513d298e8f550c7f822ea78beabbea9a626d",
+    "source.archive": "6a4e5499fb309d7dc0c506b6bc994e20e926558a7499a2f35eef70e64023b11b"
+  },
+  "snapshot_identity": "c5e600c763e501e3a71e74a3d04d014eea2d00d33a63afcb1cc29151b54bd62f"
+}

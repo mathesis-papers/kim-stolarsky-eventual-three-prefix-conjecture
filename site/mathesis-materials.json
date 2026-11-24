@@ -1,0 +1,11 @@
+{
+  "schema": "mathesis.materials.v1",
+  "work": "kim-stolarsky-eventual-three-prefix-conjecture",
+  "version": 2,
+  "repository_url": "https://github.com/mathesis-papers/kim-stolarsky-eventual-three-prefix-conjecture",
+  "site_url": "https://papers.trureturing.org/kim-stolarsky-eventual-three-prefix-conjecture/",
+  "doi": null,
+  "reading": {},
+  "slides": [],
+  "visualizations": []
+}

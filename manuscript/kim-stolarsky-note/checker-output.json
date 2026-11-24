@@ -1,0 +1,67 @@
+{
+  "arithmetic": "exact Python integers and fractions.Fraction",
+  "coverage": "Polynomial identities and sign bounds; rational full expansions; cubic-root prefix brackets; finite source-sum and double-zero-family controls.",
+  "cubic_branch_prefix_indices": {
+    "count": 60,
+    "maximum": 60,
+    "minimum": 1
+  },
+  "double_zero_family_controls": {
+    "distances": "1..20",
+    "parameters": "0..30"
+  },
+  "general_squared_even_prefix_parameters": {
+    "maximum": 10000,
+    "minimum": 40,
+    "step": 2
+  },
+  "general_squared_odd_even_parameters": {
+    "maximum": 10000,
+    "minimum": 12,
+    "step": 2
+  },
+  "odd_and_even_full_expansion_indices": {
+    "count": 61,
+    "maximum": 60,
+    "minimum": 0
+  },
+  "polynomial_certificates": {
+    "left_endpoint_identities": 2,
+    "sign_bound_threshold": 1000000,
+    "status": "pass",
+    "third_endpoint_identities": 2,
+    "third_transform_identity": "degree-three identity in the tail; four coefficient-polynomial comparisons"
+  },
+  "source_R_and_Q_failure_indices": [
+    2,
+    5,
+    8,
+    11,
+    14,
+    17,
+    20,
+    23,
+    26,
+    29,
+    32,
+    35,
+    38,
+    41,
+    44,
+    47,
+    50,
+    53,
+    56,
+    59
+  ],
+  "source_polynomial_controls": {
+    "arguments": [
+      -5,
+      -4,
+      0,
+      1
+    ],
+    "parameters": "2..30"
+  },
+  "status": "pass"
+}

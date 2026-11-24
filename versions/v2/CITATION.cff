@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this work, cite it."
+title: "Correction of Kim–Stolarsky's eventual three-prefix conjecture"
+authors:
+  - name: "Haobo Ma"
+  - name: "Wenlin Zhang"
+date-released: "2026-11-23"
+version: "2"
+url: "https://mathesis-omega-research.apps.chrono-ai.fun/papers/kim-stolarsky-eventual-three-prefix-conjecture?version=2"
+license: "CC-BY-4.0"

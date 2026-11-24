@@ -1,0 +1,204 @@
+{
+  "nodes": [
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s1",
+      "contributor": null,
+      "identity": "collected:kim-stolarsky-eventual-three-prefix-conjecture:2:s1",
+      "kind": "paper",
+      "label": "Theorem",
+      "lean_source": {
+        "revision": "53c631a19a8292b44b6ed47b8cb236f00c7f5ed8",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/53c631a19a8292b44b6ed47b8cb236f00c7f5ed8/D5/S1/Depth/ContinuedFractions/KimStolarskyEventualPrefixRefutation.lean"
+      },
+      "lineage": "collected:kim-stolarsky-eventual-three-prefix-conjecture:s1",
+      "macros": {
+        "\\ceil": "\\left\\lceil #1\\right\\rceil",
+        "\\floor": "\\left\\lfloor #1\\right\\rfloor"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "kim-stolarsky-eventual-three-prefix-conjecture",
+      "scope": "in_scope",
+      "statement": "For $m=m_n$, $n\\ge1$, the three polynomials have unique roots below $-4$.\nTheir negatives satisfy~\\eqref{eq:sourceL} and the corrected prefixes\n\\begin{equation}\n y_R(m)=\\left[4;\\frac m2+2,\\floor{(m-3)/7},\\ldots\\right],\\qquad\n y_Q(m)=\\left[4;\\frac{3m}{4},3,\\floor{(6m+128)/35},\\ldots\\right].\n\\end{equation}\nBoth original prefixes~\\eqref{eq:sourceR} and~\\eqref{eq:sourceQ} fail\nexactly for $n\\equiv2\\pmod3$. Moreover,\n\\begin{equation}\n y_R(m)>y_L(m)>y_Q(m)>4,\n\\end{equation}\nand the roots tend to $-4$. The ratios of the first partial quotient after\nthe integer part to the next large partial quotient tend, respectively, to\n$101/3$, $7/2$, and $35/8$ for $L,R,Q$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Correction of Kim–Stolarsky's eventual three-prefix conjecture",
+      "toolchain": null,
+      "version": 2,
+      "work": "kim-stolarsky-eventual-three-prefix-conjecture"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s2",
+      "contributor": null,
+      "identity": "collected:kim-stolarsky-eventual-three-prefix-conjecture:2:s2",
+      "kind": "paper",
+      "label": "Theorem",
+      "lean_source": {
+        "revision": "53c631a19a8292b44b6ed47b8cb236f00c7f5ed8",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/53c631a19a8292b44b6ed47b8cb236f00c7f5ed8/D5/S1/Depth/ContinuedFractions/KimStolarskyEventualPrefixRefutation.lean"
+      },
+      "lineage": "collected:kim-stolarsky-eventual-three-prefix-conjecture:s2",
+      "macros": {
+        "\\ceil": "\\left\\lceil #1\\right\\rceil",
+        "\\floor": "\\left\\lfloor #1\\right\\rfloor"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "kim-stolarsky-eventual-three-prefix-conjecture",
+      "scope": "in_scope",
+      "statement": "For every even $m\\ge12$,\n\\[\n y_R(m)=\\frac{4m^2+6m+2}{m^2+m+2},\\qquad\n y_R(m)=\\left[4;\\frac m2+2,\\floor{(m-3)/7},\\ldots\\right].\n\\]\nTermination occurs at the third digit if $(m-3)/7$ is integral.\nFor $m=m_n$, $n\\ge0$, put $A=m/2+2$ and $b=\\floor{m/7}$.\nThe full canonical expansions are\n\\begin{equation}\n y_R(m)=\\begin{cases}\n [4;A,b-1,1,6],&n\\equiv0\\pmod3,\\\\\n [4;A,b-1,1,2,2],&n\\equiv1\\pmod3,\\\\\n [4;A,b,7],&n\\equiv2\\pmod3.\n \\end{cases}\n\\end{equation}",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Correction of Kim–Stolarsky's eventual three-prefix conjecture",
+      "toolchain": null,
+      "version": 2,
+      "work": "kim-stolarsky-eventual-three-prefix-conjecture"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s3",
+      "contributor": null,
+      "identity": "collected:kim-stolarsky-eventual-three-prefix-conjecture:2:s3",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "53c631a19a8292b44b6ed47b8cb236f00c7f5ed8",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/53c631a19a8292b44b6ed47b8cb236f00c7f5ed8/D5/S1/Depth/ContinuedFractions/KimStolarskyEventualPrefixRefutation.lean"
+      },
+      "lineage": "collected:kim-stolarsky-eventual-three-prefix-conjecture:s3",
+      "macros": {
+        "\\ceil": "\\left\\lceil #1\\right\\rceil",
+        "\\floor": "\\left\\lfloor #1\\right\\rfloor"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "kim-stolarsky-eventual-three-prefix-conjecture",
+      "scope": "in_scope",
+      "statement": "The ordering~\\eqref{eq:order} holds for every integer $m\\ge12$.\nThe three roots approach $-4$, and the three ratio limits in\nTheorem~\\ref{thm:all} hold.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Correction of Kim–Stolarsky's eventual three-prefix conjecture",
+      "toolchain": null,
+      "version": 2,
+      "work": "kim-stolarsky-eventual-three-prefix-conjecture"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s4",
+      "contributor": null,
+      "identity": "collected:kim-stolarsky-eventual-three-prefix-conjecture:2:s4",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "53c631a19a8292b44b6ed47b8cb236f00c7f5ed8",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/53c631a19a8292b44b6ed47b8cb236f00c7f5ed8/D5/S1/Depth/ContinuedFractions/KimStolarskyEventualPrefixRefutation.lean"
+      },
+      "lineage": "collected:kim-stolarsky-eventual-three-prefix-conjecture:s4",
+      "macros": {
+        "\\ceil": "\\left\\lceil #1\\right\\rceil",
+        "\\floor": "\\left\\lfloor #1\\right\\rfloor"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "kim-stolarsky-eventual-three-prefix-conjecture",
+      "scope": "in_scope",
+      "statement": "The squared even term $R_{m,e}(x)=(T_{2m}+(1+T_m)x)^2$ has unique real root\n$-y_E(m)$, where\n\\[\n y_E(m)=\\frac{4m^2+2m}{m^2+m+2}.\n\\]\nFor every even $m\\ge40$,\n\\[\n y_E(m)=\\left[3;1,\\frac m2-3,1,1,\\floor{(m-10)/28},\\ldots\\right].\n\\]\nFor $m=m_n$, $n\\ge0$, put $c=\\floor{m/28}$ and $E=m/2-3$.\nThe full canonical expansions are\n\\begin{equation}\n y_E(m)=\\begin{cases}\n [3;1,E,1,1,c,4,1,2],&n\\equiv0\\pmod3,\\\\\n [3;1,E,1,1,c-1,1,13],&n\\equiv1\\pmod3,\\\\\n [3;1,E,1,1,c-1,1,3,1,2],&n\\equiv2\\pmod3.\n \\end{cases}\n\\end{equation}",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Correction of Kim–Stolarsky's eventual three-prefix conjecture",
+      "toolchain": null,
+      "version": 2,
+      "work": "kim-stolarsky-eventual-three-prefix-conjecture"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s5",
+      "contributor": null,
+      "identity": "collected:kim-stolarsky-eventual-three-prefix-conjecture:2:s5",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "53c631a19a8292b44b6ed47b8cb236f00c7f5ed8",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/53c631a19a8292b44b6ed47b8cb236f00c7f5ed8/D5/S1/Depth/ContinuedFractions/KimStolarskyEventualPrefixRefutation.lean"
+      },
+      "lineage": "collected:kim-stolarsky-eventual-three-prefix-conjecture:s5",
+      "macros": {
+        "\\ceil": "\\left\\lceil #1\\right\\rceil",
+        "\\floor": "\\left\\lfloor #1\\right\\rfloor"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "kim-stolarsky-eventual-three-prefix-conjecture",
+      "scope": "in_scope",
+      "statement": "There is no finite upper bound on the separation of two double zeros of\npolynomials of the form\n$\\sum_{j=1}^m(a+bj+cj^2)(d+ej+fj^2)$.\nThis remains true for integer coefficients and nonnegative integer zeros.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Correction of Kim–Stolarsky's eventual three-prefix conjecture",
+      "toolchain": null,
+      "version": 2,
+      "work": "kim-stolarsky-eventual-three-prefix-conjecture"
+    }
+  ]
+}

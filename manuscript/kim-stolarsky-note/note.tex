@@ -1,0 +1,364 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,array,booktabs,longtable}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\floor}[1]{\left\lfloor #1\right\rfloor}
+\newcommand{\ceil}[1]{\left\lceil #1\right\rceil}
+\title{Correction of Kim--Stolarsky's eventual\newline three-prefix conjecture}
+\author{Haobo Ma\\\small ChronoAI Pte Ltd, Singapore
+\and Wenlin Zhang\\\small National University of Singapore\\\small ChronoAI Pte Ltd, Singapore}
+\date{November 17, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+Kim and Stolarsky's eventual three-prefix conjecture in \emph{Integers} 26
+(2026), A98, Remark~3, p.~6, fails in both its squared and third terms whenever
+$n\equiv2\pmod3$, by exact continued-fraction divisions and polynomial sign bounds.
+We give corrected prefixes for all three root branches, prove the proposed
+ordering and all three limiting digit ratios, and determine the full rational
+expansions for the squared odd and even terms. A specialization of the authors'
+own identity also answers their question about the separation of double zeros:
+there is no finite bound, even for integer-coefficient factors.
+\end{abstract}
+
+\section{The source assertion and its correction}
+Put $T_j=j(j+1)/2$. For integers $s\ge2$, Kim and Stolarsky's
+Theorem~1~\cite{KS} defines
+\begin{align*}
+ L_{s,o}(x)&=\sum_{j=1}^{s}(2j-1)^3+x^3+
+       \sum_{j=2}^{s}\bigl(2j-2+(j-1)x\bigr)^3,\\
+ R_{s,o}(x)&=\bigl(T_{2s-1}+(1+T_{s-1})x\bigr)^2,\\
+ P_{m,o}(x)&=\sum_{j=0}^{m}(4j+1+jx)
+                  \bigl((j+1)(j-2)+j^2x\bigr),\\
+ Q_m(x)&=xP_{m,o}(x)-x^2+x^3.
+\end{align*}
+Their identity is $L_{m+1,o}-R_{m+1,o}=Q_m$.
+For $m=m_n=10^{4n+2}$, $n=1,2,\ldots$, their Remark~3 conjectures,
+``For large $n$'', the following continued-fraction prefixes for the
+negatives of roots tending to $-4$:
+\begin{align}
+ y_L(m)&=\left[4;\frac{3m}{4},3,4,1,\frac{9m-92}{404},\ldots\right],\label{eq:sourceL}\\
+ y_R(m)&=\left[4;\frac m2+2,\floor{m/7}-1,\ldots\right],\label{eq:sourceR}\\
+ y_Q(m)&=\left[4;\frac{3m}{4},3,\ceil{(6m+100)/35},\ldots\right].\label{eq:sourceQ}
+\end{align}
+Here $-y_L,-y_R,-y_Q$ are roots of $L_{m+1,o},R_{m+1,o},Q_m$,
+respectively. The $m+1$ shifts are essential. The same conjecture occurs
+in arXiv:2511.15133v1, Remark~4, p.~6. A prefix means the successive
+floor-and-inverse digits of an ordinary simple continued fraction;
+for rational numbers we use the expansion with final digit greater than one
+(notation as in~\cite{DLMF}).
+
+\begin{theorem}\label{thm:all}
+For $m=m_n$, $n\ge1$, the three polynomials have unique roots below $-4$.
+Their negatives satisfy~\eqref{eq:sourceL} and the corrected prefixes
+\begin{equation}\label{eq:correct}
+ y_R(m)=\left[4;\frac m2+2,\floor{(m-3)/7},\ldots\right],\qquad
+ y_Q(m)=\left[4;\frac{3m}{4},3,\floor{(6m+128)/35},\ldots\right].
+\end{equation}
+Both original prefixes~\eqref{eq:sourceR} and~\eqref{eq:sourceQ} fail
+exactly for $n\equiv2\pmod3$. Moreover,
+\begin{equation}\label{eq:order}
+ y_R(m)>y_L(m)>y_Q(m)>4,
+\end{equation}
+and the roots tend to $-4$. The ratios of the first partial quotient after
+the integer part to the next large partial quotient tend, respectively, to
+$101/3$, $7/2$, and $35/8$ for $L,R,Q$.
+\end{theorem}
+
+The correction is necessary at arbitrarily large indices, so no common
+eventual threshold makes the three original prefixes true. The squared
+term alone already gives this obstruction; the third term fails on the
+same progression. The first term, ordering and all three proposed ratio
+limits do hold.
+
+\section{The squared odd term: complete expansions}
+\begin{theorem}\label{thm:R}
+For every even $m\ge12$,
+\[
+ y_R(m)=\frac{4m^2+6m+2}{m^2+m+2},\qquad
+ y_R(m)=\left[4;\frac m2+2,\floor{(m-3)/7},\ldots\right].
+\]
+Termination occurs at the third digit if $(m-3)/7$ is integral.
+For $m=m_n$, $n\ge0$, put $A=m/2+2$ and $b=\floor{m/7}$.
+The full canonical expansions are
+\begin{equation}\label{eq:Rfull}
+ y_R(m)=\begin{cases}
+ [4;A,b-1,1,6],&n\equiv0\pmod3,\\
+ [4;A,b-1,1,2,2],&n\equiv1\pmod3,\\
+ [4;A,b,7],&n\equiv2\pmod3.
+ \end{cases}
+\end{equation}
+\end{theorem}
+\begin{proof}
+The square $R_{m+1,o}(x)$ vanishes precisely when
+$T_{2m+1}+(1+T_m)x=0$, giving the displayed value of $y_R$. Write $D=m^2+m+2$.
+Two divisions give
+\begin{equation}\label{eq:Rdivide}
+ y_R=4+\frac{2m-6}{D},\qquad
+ \frac1{y_R-4}=\frac m2+2+\frac7{m-3}.
+\end{equation}
+For even $m\ge12$, both displayed remainders lie strictly between $0$ and
+$1$, so the next complete quotient is $(m-3)/7$.
+For $m=m_n$, its residue modulo $7$ is $2,1,4$ as $n\equiv0,1,2\pmod3$,
+because $m_n\equiv2\cdot4^n\pmod7$. Thus that complete quotient is
+$b-1+6/7$, $b-1+5/7$, or $b+1/7$, respectively.
+The terminal divisions $7/6=[1;6]$, $7/5=[1;2,2]$ and $7=[7]$
+prove~\eqref{eq:Rfull}. All final digits exceed one.
+For any proposed threshold $N$, the index $3N+2\ge N$ has actual third
+digit $b$, instead of $b-1$. This negates the eventual conjunction.
+\end{proof}
+
+\section{The cubic branches: exact prefix bounds}
+We prove the remaining parts of Theorem~\ref{thm:all} by rational sign
+bounds, not numerical root approximations. Set
+\[
+ U=T_m^2,\quad B=1+T_m,\quad C=4m^3+9m^2+6m-63,
+\]
+and define
+\begin{align}
+ F_L(z)&=(U+1)z^3+(6U+12)z^2+(12U+48)z-C,\label{eq:FL}\\
+ F_Q(z)&=F_L(z)+(m-3-Bz)^2.\label{eq:FQ}
+\end{align}
+Power-sum formulas give $F_L(z)=-L_{m+1,o}(-4-z)$; the source identity gives
+$F_Q(z)=-Q_m(-4-z)$.
+For $m\ge12$, $F_L$ is strictly increasing on $z\ge0$ and $F_L(0)<0$.
+For $F_Q$, the coefficients of $z^3,z^2,z$ are positive; the latter two are
+\[
+ 7U+m^2+m+13,\qquad
+ 3m^4+5m^3+5m^2+m+54,
+\]
+The first of these is $6U+12+B^2$.
+Its constant coefficient is $-4(m-2)(m^2+4m+9)<0$.
+Consequently each has exactly one positive zero, denoted $z_L,z_Q$.
+
+For $t>1$, the two rational functions
+\begin{equation}\label{eq:Z}
+ Z_L(t)=\frac{4(16t+13)}{48mt+39m+20t+16},\qquad
+ Z_Q(t)=\frac{4(3t+1)}{9mt+3m+4t}
+\end{equation}
+satisfy
+\[
+ 4+Z_L(t)=[4;3m/4,3,4,1,t],\qquad
+ 4+Z_Q(t)=[4;3m/4,3,t].
+\]
+Both are strictly decreasing in $t$, with derivatives $-16$ divided by
+the respective squared denominators. Throughout the prefix argument,
+$m\ge M:=10^6$.
+
+Put $d=(9m-92)/404$. Substitution in~\eqref{eq:FL} gives
+\begin{align}
+ Z_L(d)&=\frac{36m+945}{27m^2+720m+289},&
+ 4(27m^2+720m+289)^3F_L(Z_L(d))&=P_0(m),\label{eq:LP0}\\
+ Z_L(d+1)&=\frac{36m+2561}{27m^2+1932m+794},&
+ 4(27m^2+1932m+794)^3F_L(Z_L(d+1))&=-P_1(m).\label{eq:LP1}
+\end{align}
+The coefficients of $P_0,P_1$ are given in Appendix~\ref{app:signs}.
+Every coefficient of $P_0$ is positive. Also
+$P_1(m)/m^6>133974-336>0$ for $m\ge M$, by the displayed coefficient
+bound there. Hence the unique zero satisfies
+$z_L=Z_L(t_L)$ for $d<t_L<d+1$.
+For $m=m_n$, $3m/4$ and $d$ are positive integers:
+$10^4\equiv1\pmod{101}$ makes $9m-92$ divisible by $404$.
+Thus~\eqref{eq:sourceL} holds, including its last digit.
+
+For $Q$, direct substitution gives
+\begin{equation}\label{eq:HQ}
+ F_Q(Z_Q(t))=\frac{-8(9mt+3m+7t+1)H_m(t)}{(9mt+3m+4t)^3},
+\end{equation}
+where
+\begin{align*}
+ H_m(t)={}&(35m^3-719m^2-1134m-432)t^2\\
+ &+(-6m^4+6m^3-512m^2-548m-120)t\\
+ &-2m^4-m^3-89m^2-54m-8.
+\end{align*}
+Let $t_-=(6m+128)/35$ and $t_+=(6m+129)/35$. Exact substitution yields
+\begin{align}
+ 1225H_m(t_-)&=-194m^4-653633m^3-16055337m^2
+                 -21789398m-7625288<0,\label{eq:Hminus}\\
+ 1225H_m(t_+)&=16(m^4-40816m^3-1016978m^2
+                 -1381575m-483782)>0.\label{eq:Hplus}
+\end{align}
+For the last sign divide the parenthesis by $m^4$:
+the subtracted terms total less than $0.041$ for $m\ge M$.
+Equations~\eqref{eq:HQ}--\eqref{eq:Hplus} and monotonicity of $F_Q,Z_Q$
+place $z_Q=Z_Q(t_Q)$ at $t_-<t_Q<t_+$.
+This interval lies within a single interval between consecutive integers,
+with an integer possibly at an endpoint, because its endpoints have
+consecutive integer numerators and denominator $35$.
+Therefore $\floor{t_Q}=\floor{(6m+128)/35}$, proving~\eqref{eq:correct}.
+Finally, $m_n\equiv30,15,25\pmod{35}$ for $n\equiv0,1,2\pmod3$;
+comparison of the floor and ceiling shows that the corrected digit equals
+the source digit in the first two classes and is one smaller in the third.
+
+\begin{corollary}\label{cor:order}
+The ordering~\eqref{eq:order} holds for every integer $m\ge12$.
+The three roots approach $-4$, and the three ratio limits in
+Theorem~\ref{thm:all} hold.
+\end{corollary}
+\begin{proof}
+Write $z_R=y_R-4=(m-3)/B$. Substitution gives
+\[
+ F_L(z_R)=\frac{m(m-1)(m+1)^2(2m+1)
+ (m^4-6m^3-39m^2-48m-12)}{(m^2+m+2)^3}>0.
+\]
+For the last factor put $m=12+v$: it becomes
+$v^4+42v^3+609v^2+3336v+4164$, positive for $v\ge0$.
+Thus $z_R>z_L$. At $z_L$,
+$F_Q(z_L)=(m-3-Bz_L)^2>0$, since $z_L\ne z_R$; hence $z_L>z_Q>0$.
+Moreover $z_L<C/(12U+48)\to0$, and $z_R\to0$ by~\eqref{eq:Rdivide}.
+The relevant digits, divided by $m$, tend to
+$(3/4,9/404)$ for $L$, $(1/2,1/7)$ for $R$, and $(3/4,6/35)$ for $Q$.
+Taking their ratios proves $101/3$, $7/2$, and $35/8$.
+\end{proof}
+
+\section{Two further consequences}
+\begin{corollary}\label{cor:even}
+The squared even term $R_{m,e}(x)=(T_{2m}+(1+T_m)x)^2$ has unique real root
+$-y_E(m)$, where
+\[
+ y_E(m)=\frac{4m^2+2m}{m^2+m+2}.
+\]
+For every even $m\ge40$,
+\[
+ y_E(m)=\left[3;1,\frac m2-3,1,1,\floor{(m-10)/28},\ldots\right].
+\]
+For $m=m_n$, $n\ge0$, put $c=\floor{m/28}$ and $E=m/2-3$.
+The full canonical expansions are
+\begin{equation}\label{eq:Efull}
+ y_E(m)=\begin{cases}
+ [3;1,E,1,1,c,4,1,2],&n\equiv0\pmod3,\\
+ [3;1,E,1,1,c-1,1,13],&n\equiv1\pmod3,\\
+ [3;1,E,1,1,c-1,1,3,1,2],&n\equiv2\pmod3.
+ \end{cases}
+\end{equation}
+\end{corollary}
+\begin{proof}
+Set $e=(2m+8)/(m^2+m+2)$, so $y_E=4-e$. The successive complete
+quotients after digits $3,1$ are
+\[
+ \frac{1-e}{e}=\frac m2-\frac52+\frac7{m+4},\quad
+ \frac{2(m+4)}{m+18}=2-\frac{28}{m+18},\quad
+ 1+\frac{28}{m-10},\quad \frac{m-10}{28}.
+\]
+The hypotheses give the stated intervening digits. For $m=m_n$, the
+residues modulo $28$ are $16,8,4$, respectively. The last quotient is
+$c+3/14$, $c-1+13/14$, or $c-1+11/14$.
+The expansions $14/3=[4;1,2]$, $14/13=[1;13]$ and
+$14/11=[1;3,1,2]$ give~\eqref{eq:Efull}.
+These are explicit even-case consequences; the source states no particular
+even prefix to be refuted.
+\end{proof}
+
+\begin{corollary}\label{cor:distance}
+There is no finite upper bound on the separation of two double zeros of
+polynomials of the form
+$\sum_{j=1}^m(a+bj+cj^2)(d+ej+fj^2)$.
+This remains true for integer coefficients and nonnegative integer zeros.
+\end{corollary}
+\begin{proof}
+On p.~4 of~\cite{KS}, the authors ask how far apart two multiple zeros
+can be, and display
+\[
+ \sum_{j=1}^m(1-bj)(1-2j+bj^2)=-\tfrac14m^2(b-2+bm)^2.
+\]
+In this identity put $b=2/(k+1)$ and multiply by $(k+1)^2$, for any
+integer $k\ge1$. It gives
+\[
+ \sum_{j=1}^m(k+1-2j)\bigl(k+1-2(k+1)j+2j^2\bigr)
+       =-m^2(m-k)^2.
+\]
+The polynomial on the right has double zeros $0,k$, separated by $k$.
+Thus the answer follows from the authors' own identity, not a new
+power-sum identity.
+\end{proof}
+
+\section{Coverage and verification scope}
+\begin{center}
+\small
+\begin{tabular}{@{}p{0.43\linewidth}p{0.53\linewidth}@{}}
+\toprule
+Source item & Coverage \\
+\midrule
+Remark 3: simultaneous eventual assertion & Refuted and corrected;
+Theorem~\ref{thm:all}. \\
+Remark 3: individual odd prefixes & $L$: proved. $R,Q$: refuted and
+corrected; Theorems~\ref{thm:all}--\ref{thm:R}. \\
+Remark 3: ordering; three ratios & Proved; Corollary~\ref{cor:order}. \\
+Remark 3: unspecified even phenomena & Explicit squared-term expansions,
+Corollary~\ref{cor:even}; even cubic branches not covered. \\
+Introduction, p. 4: distance between multiple zeros & Answered: no finite
+bound, by the authors' displayed identity; Corollary~\ref{cor:distance}. \\
+Theorem 1; Remarks 1--2,4--7; Sections 4--5 & Prior identities and
+separate constructions; not re-established. \\
+Introduction, p. 3: full discriminant classification; conjectures in [5]
+of~\cite{KS} & Not covered; the double-zero family is not a classification. \\
+\bottomrule
+\end{tabular}
+\end{center}
+The pinned
+\href{https://github.com/the-omega-institute/trureturing/blob/53c631a19a8292b44b6ed47b8cb236f00c7f5ed8/D5/S1/Depth/ContinuedFractions/KimStolarskyEventualPrefixRefutation.lean}{Lean declaration \texttt{KimStolarskyEventualPrefixRefutation.result}}
+has conclusion $\neg\texttt{claim}$. This name is prefixed by
+\texttt{D5.S1.Depth.ContinuedFractions}.
+The proposition \texttt{claim} is the full simultaneous eventual assertion,
+including the original polynomials, $m+1$ shifts, root limits and the three
+original prefixes. The proof uses the squared odd term at $n=3N+2$.
+The
+\href{https://github.com/the-omega-institute/trureturing/blob/53c631a19a8292b44b6ed47b8cb236f00c7f5ed8/D5/S1/Depth/ContinuedFractions/QuadraticImpliesPeriodic.lean}{pinned declaration \texttt{QuadraticImpliesPeriodic.completeQuotient}}
+defines the iterated inverse-fractional-part map used by \texttt{HasPrefix};
+no periodicity theorem is needed for this obstruction.
+The full expansions, the $L,Q$ corrections and proofs, ordering, ratio
+limits and double-zero consequence have the written proofs above.
+The companion \texttt{verify.py} checks the displayed polynomial identities
+coefficient by coefficient, their rational sign bounds, and stated finite
+ranges of continued-fraction formulas with exact integers and rational
+arithmetic. These finite checks are distinct from the all-parameter
+conclusions of the written proofs and from the scope of \texttt{result}.
+
+\appendix
+\section{Coefficients for the prefix bounds}\label{app:signs}
+The two polynomials in~\eqref{eq:LP0}--\eqref{eq:LP1} have the following
+coefficients; the row indexed by $j$ is the coefficient of $m^j$.
+\begin{center}
+\begin{tabular}{@{}rrr@{}}
+\toprule
+$j$ & $P_0$ & $P_1$ \\
+\midrule
+6 & 3171150 & 133974 \\
+5 & 304726968 & $-335894760$ \\
+4 & 9740981349 & $-50623742159$ \\
+3 & 111108436490 & $-1910502470606$ \\
+2 & 216415841355 & $-4118482794221$ \\
+1 & 153160798296 & $-3039824512752$ \\
+0 & 37000394928 & $-753289137476$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+If $p_j$ are the coefficients in the last column and $m\ge M=10^6$,
+then
+\[
+ \sum_{j=0}^{5}\frac{|p_j|}{m^{6-j}}
+ \le\sum_{j=0}^{5}\frac{|p_j|}{M^{6-j}}<336,
+\]
+which proves the sign used above. Each identity in this appendix is a
+polynomial identity obtained by clearing the explicitly positive denominators
+in~\eqref{eq:LP0}--\eqref{eq:LP1}.
+
+\begin{thebibliography}{9}
+\bibitem{KS} S.-H. Kim and K. B. Stolarsky,
+\emph{A balanced three or more-term generalization of Nicomachus' identity},
+Integers \textbf{26} (2026), A98, pp.~1--12;
+\href{https://doi.org/10.5281/zenodo.21678529}{doi:10.5281/zenodo.21678529}.
+Preprint: \emph{A balanced three-term generalization of Nicomachus' identity},
+\href{https://arxiv.org/abs/2511.15133v1}{arXiv:2511.15133v1} (2025),
+Theorem~1, p.~5, and Remark~4, p.~6.
+\bibitem{DLMF} NIST Digital Library of Mathematical Functions,
+\S1.12(i), equation (1.12.1), continued-fraction notation,
+\url{https://dlmf.nist.gov/1.12.i} (accessed November 17, 2026).
+\end{thebibliography}
+\noindent\small\copyright\ 2026 Haobo Ma and Wenlin Zhang.
+Licensed under \href{https://creativecommons.org/licenses/by/4.0/}{CC BY 4.0}.
+\end{document}
